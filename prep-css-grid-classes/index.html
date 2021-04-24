@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      justify-content: space-around;
+    }
+    h3 {
+      justify-content: space-around;
+    }
+    p {
+      justify-content: space-around;
+    }
+
+    .container {
+        max-width: 992px;
+        margin: auto;
+
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .column {
+        flex-basis: calc(100% / 3);
+        padding-left: 8px;
+        padding-right: 8px;
+
+
+    }
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+    <h1>Indiana Jones</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+              <img src="images/crusade.png">
+              <h3>The Last Crusade</h3>
+                <p>I don't think I know anything about this movie, but it sounds cool.</p>
+            </div>
+            <div class="column">
+              <img src="images/raiders.jpg">
+              <h3>Raiders of the Lost Ark</h3>
+                <p>I've heard of this movie, but never seen it.</p>
+            </div>
+            <div class="column">
+              <img src="images/temple.jpg">
+              <h3>Temple of Doom</h3>
+                <p>I've ridden the Disneyland ride that I believe is based on this film.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
